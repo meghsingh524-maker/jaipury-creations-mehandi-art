@@ -352,4 +352,120 @@ h2{
     color:#d4af37;
     font-family:'Cinzel',serif;
     text-align:center;
+}/*=========================================
+PART 4 - REVIEWS | CONTACT | FOOTER | MOBILE
+=========================================*/
+
+/* Reviews */
+
+.reviews{
+    background:#0b0b0b;
+}
+
+.review-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.review-card{
+    background:#151515;
+    padding:30px;
+    border-radius:20px;
+    border:1px solid rgba(212,175,55,.25);
+    transition:.35s;
+}
+
+.review-card:hover{
+    transform:translateY(-8px);
+    border-color:#d4af37;
+    box-shadow:0 0 25px rgba(212,175,55,.25);
+}
+
+.review-card h3{
+    color:#d4af37;
+    margin-bottom:12px;
+    font-family:'Cinzel',serif;
+}
+
+.review-card p{
+    color:#ddd;
+    line-height:30px;
+}
+
+/* Contact */
+
+.contact{
+    background:#101010;
+    text-align:center;
+}
+
+.contact h2{
+    margin-bottom:20px;
+}
+
+.contact p{
+    color:#ccc;
+    margin-bottom:30px;
+}
+
+.contact-btn{
+    display:inline-block;
+    padding:16px 38px;
+    background:#d4af37;
+    color:#000;
+    border-radius:40px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.contact-btn:hover{
+    transform:translateY(-4px);
+}
+
+/* Footer */
+
+footer{
+    background:#000;
+    text-align:center;
+    padding:35px 20px;
+    color:#999;
+    border-top:1px solid rgba(212,175,55,.25);
+}
+
+footer span{
+    color:#d4af37;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+.hero-content h1{
+    font-size:42px;
+}
+
+.hero-content p{
+    font-size:18px;
+}
+
+.about-grid{
+    grid-template-columns:1fr;
+}
+
+.gallery-grid,
+.video-grid,
+.review-grid,
+.why-grid{
+    grid-template-columns:1fr;
+}
+
+section{
+    padding:70px 20px;
+}
+
 }

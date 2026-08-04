@@ -1,0 +1,186 @@
+/* =========================================
+   JAIPURY CREATIONS - PREMIUM STYLE
+   PART 1
+========================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#090909;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+ul{
+    list-style:none;
+}
+
+/* Loader */
+
+#loader{
+    position:fixed;
+    inset:0;
+    background:#000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+}
+
+.loader-content{
+    text-align:center;
+}
+
+.loader-content h1{
+    font-family:'Cinzel',serif;
+    color:#d4af37;
+    font-size:42px;
+    letter-spacing:3px;
+}
+
+.loader-content p{
+    color:#ffffff;
+    margin-top:15px;
+    font-size:18px;
+}
+
+/* Header */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:rgba(0,0,0,.65);
+    backdrop-filter:blur(10px);
+    z-index:999;
+}
+
+nav{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-family:'Cinzel',serif;
+    color:#d4af37;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    gap:28px;
+}
+
+nav ul li a{
+    color:#fff;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#d4af37;
+}
+
+/* Hero */
+
+.hero{
+    position:relative;
+    width:100%;
+    height:100vh;
+    background:url("images/hero.jpg") center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.65);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content h3{
+    color:#d4af37;
+    font-size:24px;
+    margin-bottom:10px;
+}
+
+.hero-content h1{
+    font-family:'Cinzel',serif;
+    font-size:62px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:20px;
+    line-height:36px;
+    margin-bottom:35px;
+}
+
+.hero-btn{
+    display:inline-block;
+    padding:16px 38px;
+    background:#d4af37;
+    color:#000;
+    font-weight:700;
+    border-radius:40px;
+    transition:.3s;
+}
+
+.hero-btn:hover{
+    transform:translateY(-4px);
+}
+
+section{
+    padding:90px 8%;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+h2{
+    font-family:'Cinzel',serif;
+    color:#d4af37;
+    font-size:42px;
+    text-align:center;
+    margin-bottom:18px;
+}
+
+.section-text{
+    text-align:center;
+    color:#ccc;
+    max-width:700px;
+    margin:auto auto 50px;
+    line-height:32px;
+}

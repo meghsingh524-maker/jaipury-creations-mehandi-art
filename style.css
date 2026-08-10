@@ -681,48 +681,7 @@ section{
         text-align: center;
     }
 }
-/* ================================
-   MOBILE LAYOUT FIX
-   ================================ */
-
-* {
-    box-sizing: border-box;
-}
-
-html,
-body {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-}
-
-img,
-video {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Main containers */
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-/* Features */
-.features {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 20px;
-}
-
-.feature {
-    width: 100%;
+ width: 100%;
     min-width: 0;
     overflow-wrap: break-word;
     word-wrap: break-word;
@@ -752,110 +711,123 @@ section p {
 /* Gallery */
 .gallery-grid {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 15px;
+    display: grid
+/* =========================================
+   FINAL MOBILE FIX
+========================================= */
+
+html,
+body{
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
 }
 
-.gallery-item {
-    width: 100%;
-    min-width: 0;
+@media (max-width:768px){
+
+    section{
+        width:100%;
+        max-width:100%;
+        overflow:hidden;
+    }
+
+    .container{
+        width:100%;
+        max-width:100%;
+        margin:0 auto;
+        padding-left:16px;
+        padding-right:16px;
+    }
+
+    /* WHY CHOOSE US */
+    .why-grid{
+        width:100%;
+        display:grid;
+        grid-template-columns:1fr !important;
+        gap:20px;
+    }
+
+    .why-card{
+        width:100%;
+        max-width:100%;
+        min-width:0;
+        margin:0;
+        padding:30px 20px;
+    }
+
+    .why-card h3,
+    .why-card p{
+        max-width:100%;
+        overflow-wrap:break-word;
+        word-wrap:break-word;
+    }
+
+    /* ABOUT */
+    .about-grid{
+        width:100%;
+        grid-template-columns:1fr !important;
+    }
+
+    /* GALLERY */
+    .gallery-grid{
+        width:100%;
+        grid-template-columns:1fr !important;
+    }
+
+    .gallery-item{
+        width:100%;
+        min-width:0;
+    }
+
+    /* VIDEOS */
+    .video-grid{
+        width:100%;
+        grid-template-columns:1fr !important;
+    }
+
+    .video-card{
+        width:100%;
+        min-width:0;
+    }
+
+    .video-card video{
+        width:100%;
+        height:auto;
+        display:block;
+    }
+
+    /* REVIEWS */
+    .review-grid{
+        width:100%;
+        grid-template-columns:1fr !important;
+    }
+
+    .review-card{
+        width:100%;
+        min-width:0;
+    }
+
+    /* HEADINGS */
+    h2{
+        max-width:100%;
+        overflow-wrap:break-word;
+        word-wrap:break-word;
+    }
 }
 
-.gallery-item img {
-    width: 100%;
-    display: block;
-}
+@media (max-width:480px){
 
-/* Videos */
-.video-grid {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 20px;
-}
-
-.video-item {
-    width: 100%;
-    min-width: 0;
-}
-
-.video-item video {
-    width: 100%;
-    display: block;
-}
-
-/* ================================
-   MOBILE
-   ================================ */
-
-@media (max-width: 768px) {
-
-    .container {
-        width: 100%;
-        padding-left: 16px;
-        padding-right: 16px;
+    .container{
+        padding-left:14px;
+        padding-right:14px;
     }
 
-    .features,
-    .why .features {
-        grid-template-columns: 1fr;
-        gap: 18px;
+    .why-card{
+        padding:28px 16px;
     }
 
-    .feature {
-        width: 100%;
-        text-align: center;
-    }
-
-    .feature h3 {
-        font-size: 24px;
-        line-height: 1.25;
-    }
-
-    .feature p {
-        font-size: 18px;
-        line-height: 1.5;
-    }
-
-    .gallery-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 10px;
-    }
-
-    .video-grid {
-        grid-template-columns: 1fr;
-        gap: 18px;
-    }
-
-    section h2 {
-        font-size: 32px;
-        line-height: 1.2;
-        text-align: center;
-    }
-}
-
-/* Small phones */
-@media (max-width: 480px) {
-
-    .container {
-        padding-left: 14px;
-        padding-right: 14px;
-    }
-
-    .gallery-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .feature h3 {
-        font-size: 22px;
-    }
-
-    .feature p {
-        font-size: 17px;
-    }
-
-    section h2 {
-        font-size: 28px;
+    h2{
+        font-size:30px;
+        line-height:1.25;
     }
 }

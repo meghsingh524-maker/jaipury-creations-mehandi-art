@@ -219,8 +219,23 @@ h2{
   align-items:center;
   flex-wrap:wrap;
   gap:14px;
-  padding:22px 16px 28px;
+  padding:16px 16px 22px;
   background:#080808;
+  border-top:1px solid rgba(212,175,55,.35);
+  position:relative;
+}
+
+.hero-buttons::before{
+  content:"✦ ───── ✦";
+  position:absolute;
+  top:-11px;
+  left:50%;
+  transform:translateX(-50%);
+  color:#d4af37;
+  background:#080808;
+  padding:0 10px;
+  font-size:12px;
+  letter-spacing:2px;
 }
 
 .btn{

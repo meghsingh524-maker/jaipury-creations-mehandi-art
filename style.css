@@ -178,22 +178,14 @@ h2{
 .hero{
     position:relative;
     width:100%;
-    min-height:78vh;
-
+    height:72vh;
+    min-height:520px;
     display:flex;
     align-items:center;
     justify-content:center;
-
     text-align:center;
-
-    padding:120px 20px 80px;
-
-    background-color:#090909;
-    background-image:url("hero.jpg");
-    background-position:center center;
-    background-size:cover;
-    background-repeat:no-repeat;
-
+    background:url("images/hero.jpg") center center/cover no-repeat;
+    padding:90px 20px 40px;
     overflow:hidden;
 }
 
@@ -627,7 +619,7 @@ footer h3{
    MOBILE
 ========================= */
 
-@media(max-width:768px){
+@media(max-width:500px){
 
     .nav{
         min-height:64px;
@@ -665,10 +657,10 @@ footer h3{
     }
 
     .hero{
-        min-height:75svh;
+        min-height:68svh;
 
         padding:
-        90px 16px 45px;
+        80px 16px 35px;
 
         background-position:center center;
     }

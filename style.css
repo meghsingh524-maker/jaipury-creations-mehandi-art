@@ -202,7 +202,16 @@ h2{
   object-position:center;
   background:#080808;
 }
-
+.hero-image{
+  display:block;
+  width:100%;
+  height:auto;
+  max-width:100%;
+  object-fit:contain;
+  object-position:center;
+  background:#080808;
+  border:2px solid #d4af37;
+}
 .hero-buttons{
   width:100%;
   display:flex;

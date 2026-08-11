@@ -178,7 +178,7 @@ h2{
 .hero{
     position:relative;
     width:100%;
-    min-height:100vh;
+    min-height:78vh;
 
     display:flex;
     align-items:center;
@@ -665,10 +665,10 @@ footer h3{
     }
 
     .hero{
-        min-height:100svh;
+        min-height:75svh;
 
         padding:
-        100px 16px 55px;
+        90px 16px 45px;
 
         background-position:center center;
     }
